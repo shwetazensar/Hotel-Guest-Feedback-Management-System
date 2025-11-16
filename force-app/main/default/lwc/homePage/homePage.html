@@ -1,0 +1,38 @@
+<template>
+    <lightning-card class="hotel-card">
+        <div class="hotel-header">
+            <p class="hotel-title">Welcome to the Hotel !! </p>
+            <p class="tagline"><i>Making Every Guest Feel at Home.</i></p>
+        </div>
+
+        <div class="slds-grid slds-wrap slds-gutters hotel-nav">
+            <!-- Guests -->
+            <div class="slds-col slds-size_1-of-4 slds-text-align_center nav-item">
+                <lightning-button-icon icon-name="standard:account" alternative-text="Guests" size="large"
+                    onclick={navigateToGuests} class="nav-icon"></lightning-button-icon>
+                <p class="nav-label">Guests</p>
+            </div>
+
+            <!-- Cases -->
+            <div class="slds-col slds-size_1-of-4 slds-text-align_center nav-item">
+                <lightning-button-icon icon-name="standard:case" alternative-text="Cases" size="large"
+                    onclick={navigateToCases} class="nav-icon"></lightning-button-icon>
+                <p class="nav-label">Cases</p>
+            </div>
+
+            <!-- Feedbacks -->
+            <div class="slds-col slds-size_1-of-4 slds-text-align_center nav-item">
+                <lightning-button-icon icon-name="standard:feedback" alternative-text="Feedbacks" size="large"
+                    onclick={navigateToFeedbacks} class="nav-icon"></lightning-button-icon>
+                <p class="nav-label">Feedbacks</p>
+            </div>
+
+            <!-- Issue Actions -->
+            <div class="slds-col slds-size_1-of-4 slds-text-align_center nav-item">
+                <lightning-button-icon icon-name="standard:task" alternative-text="Issue Actions" size="large"
+                    onclick={navigateToIssueActions} class="nav-icon"></lightning-button-icon>
+                <p class="nav-label">Issue Actions</p>
+            </div>
+        </div>
+    </lightning-card>
+</template>
